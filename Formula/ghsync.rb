@@ -4,14 +4,8 @@ class Ghsync < Formula
   version "v0.0.6"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/fionaguoguolu/ghsync/releases/download/v0.0.6/ghsync-darwin-arm64"
-      sha256 "5285d753c5b2673645ede4b36b22abceb5974161aa4697a4d25a59b0cf30e8e2"
-    end
-    if Hardware::CPU.intel?
-      url "https://github.com/fionaguoguolu/ghsync/releases/download/v0.0.6/ghsync-darwin-amd64"
-      sha256 "db0008f006842e4365abf41e7bc1681a1129660224ecfe37965d5682792e00d1"
-    end
+    url "https://github.com/fionaguoguolu/ghsync/releases/download/v0.0.6/ghsync-darwin-arm64"
+    sha256 "5285d753c5b2673645ede4b36b22abceb5974161aa4697a4d25a59b0cf30e8e2"
   end
 
   on_linux do
